@@ -1,0 +1,24 @@
+/* @import "./base.css"; */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  position: relative;
+  font-weight: normal;
+}
+#app {
+  margin: 0 auto;
+  /* padding: 2rem; */
+  font-weight: normal;
+}
+body {
+  background-color: #e5e5e5;
+}
+
+/* @media (hover: hover) {
+  a:hover {
+    background-color: hsla(160, 100%, 37%, 0.2);
+  }
+} */
+
+/* @media (min-width: 1024px) {
+} */
