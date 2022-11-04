@@ -1,4 +1,3 @@
-vbase
 <template>
   <div>
     <div class="container">
@@ -49,11 +48,11 @@ export default {
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: 76px;
+  gap: 56px;
 }
 .introImg {
   height: 400px;
-  width: 50%;
+  width: 55%;
   object-fit: cover;
 }
 .topper {
@@ -79,7 +78,7 @@ export default {
   width: 16px;
 }
 .title {
-  width: 90%;
+  width: 95%;
   font-family: "IBM Plex Serif";
   font-style: normal;
   font-weight: 600;

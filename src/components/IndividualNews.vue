@@ -2,7 +2,9 @@
   <div v-for="(unit, index) in extendingProp" :key="index" class="card">
     <img :src="unit.urlToImage" alt="header-image" class="img" />
     <div class="content">
-      <h2 class="title">{{ unit.title }}</h2>
+      <RouterLink :to="`/blog/${unit.title}`" class="title">{{
+        unit.title
+      }}</RouterLink>
       <p class="para">{{ unit.description }}</p>
       <div class="introFoot">
         <span class="timer">2 hours ago</span>
@@ -31,6 +33,7 @@
 import love from "/images/like.png";
 import share from "/images/share.png";
 import bookmark from "/images/bookmark.png";
+import { RouterLink } from "vue-router";
 export default {
   props: {
     extendingProp: {
@@ -64,6 +67,8 @@ export default {
   font-size: 18px;
   line-height: 24px;
   margin-bottom: 17px;
+  text-decoration: none;
+  color: #2a2a2a;
 }
 .para {
   font-family: "Nunito Sans";
@@ -76,6 +81,7 @@ export default {
 .img {
   height: 210px;
   width: 100%;
+  object-fit: cover;
 }
 .introFoot {
   display: flex;

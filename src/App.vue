@@ -22,7 +22,7 @@ export default {
 </script>
 
 <template>
-  <div>
+  <div class="house">
     <NavbarVue
       v-on:changeActiveTab="changeTab($event)"
       :activeTab="activeTab"
@@ -32,4 +32,8 @@ export default {
   </div>
 </template>
 
-<style></style>
+<style>
+.house {
+  position: relative;
+}
+</style>

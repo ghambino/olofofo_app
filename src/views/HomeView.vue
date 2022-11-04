@@ -1,6 +1,7 @@
 <template>
   <div>
     <div class="container">
+      <p>{{ category }}</p>
       <IntroHeader :headlinerNews="headlinerNews" />
       <div class="divider">
         <p class="whiteback">Breaking News</p>
